@@ -11,8 +11,8 @@ Vcs-Browser: https://github.com/maemo-leste/rtcom-accounts-ui-client
 Vcs-Git: https://github.com/maemo-leste/rtcom-accounts-ui-client.git
 
 Package: rtcom-accounts-ui-client
-Section: doc
-Architecture: libs
+Section: libs
+Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}
 Description: Client library to control AccountsUI, DBUS interface files
