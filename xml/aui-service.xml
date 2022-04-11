@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<node name="/com/nokia/AccountsUI">
+  <interface name="com.nokia.Accounts">
+    <annotation name="org.freedesktop.DBus.GLib.CSymbol" value="aui_service"/>
+    <method name="OpenAccountsList">
+      <arg name="ParentXid" type="u" direction="in"/>
+      <arg name="Ui" type="o" direction="out"/>
+      <arg name="UiProperties" type="a{sv}" direction="out"/>
+    </method>
+    <method name="NewAccount">
+      <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+      <arg name="ParentXid" type="u" direction="in"/>
+      <arg name="ServiceName" type="s" direction="in"/>
+      <arg name="OnFinish" type="s" direction="in"/>
+      <arg name="Ui" type="o" direction="out"/>
+      <arg name="UiProperties" type="a{sv}" direction="out"/>
+    </method>
+    <method name="EditAccount">
+      <annotation name="org.freedesktop.DBus.GLib.Async" value="true"/>
+      <arg name="ParentXid" type="u" direction="in"/>
+      <arg name="AccountName" type="s" direction="in"/>
+      <arg name="OnFinish" type="s" direction="in"/>
+      <arg name="Ui" type="o" direction="out"/>
+      <arg name="UiProperties" type="a{sv}" direction="out"/>
+    </method>
+    <signal name="UiClosed">
+      <arg type="o"/>
+    </signal>
+  </interface>
+</node>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<node name="/com/nokia/AccountsUI">
+  <interface name="com.nokia.Accounts.UI">
+  <annotation name="org.freedesktop.DBus.GLib.CSymbol" value="aui_instance"/>
+    <method name="Close">
+    </method>
+    <signal name="PropertyChanged">
+      <arg type="a{sv}"/>
+    </signal>
+    <property name="ParentXid" type="u" access="write"/>
+    <property name="Visible" type="b" access="readwrite"/>
+  </interface>
+</node>

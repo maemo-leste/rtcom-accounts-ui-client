@@ -1,0 +1,14 @@
+prefix=@prefix@
+PACKAGE_TARNAME=@PACKAGE_TARNAME@
+exec_prefix=${prefix}
+libdir=@libdir@
+includedir=@includedir@
+dbusinterfacedir=@docdir@
+
+Name: @PACKAGE_NAME@
+Description: Client library to control AccountsUI.
+Version: @PACKAGE_VERSION@
+Requires: gtk+-2.0
+Requires.private: dbus-glib-1, glib-2.0, gobject-2.0
+Libs: -L${libdir} -l@PACKAGE_NAME@
+Cflags: -I${includedir}

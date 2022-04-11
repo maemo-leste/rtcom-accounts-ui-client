@@ -1,0 +1,4 @@
+/usr/include/rtcom-accounts-ui-client
+/usr/lib/*/pkgconfig/rtcom-accounts-ui-client.pc
+/usr/lib/*/librtcom-accounts-ui-client.so
+/usr/lib/*/librtcom-accounts-ui-client.a
