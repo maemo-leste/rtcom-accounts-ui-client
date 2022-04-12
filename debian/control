@@ -1,4 +1,5 @@
 Source: rtcom-accounts-ui-client
+Section: comm
 Priority: optional
 Maintainer: Ivaylo Dimitrov <ivo.g.dimitrov.75@gmail.com>
 Build-Depends:
